@@ -3,6 +3,7 @@
 ## Instructions
 This is a video of what your project should look like at the end of today's lab test:
 
+[![YouTube](http://img.youtube.com/vi/bydalDzhCBY/0.jpg)](https://www.youtube.com/watch?v=bydalDzhCBY)
 
 - Download this starter Unity project that has a skybox asset and a model of the Eagle transporter ship.
 - Create a new, empty Unity github repository. Make sure the name is Space1999 and push your project to it. You can use whatever git client you are familiar with. If you are unsure how to do this, cd to the folder you unzipped the project to and type:
@@ -16,8 +17,8 @@ This is a video of what your project should look like at the end of today's lab 
     ```
 - Create a new empty scene in your Unity project
 - Set up the skybox and position the camera at (42, 8, -45), with a rotation of 83<sup>o</sup> around the Y axis
-- Drag the Eagle model into the scene and parent it so that it points down the Z azis. 
-- Add a new component called Boid with public fields for mass and maximumSpeed. Give these the values of 1 and 10. 
+- Drag the Eagle model into the scene. Rotate it so that it points down the Z azis and parent it to an empty gameobject called eaglePrefab.
+- Add a new component called Boid to the eaglePrefab. Give the Boid public fields for mass and maximumSpeed. Give these the values of 1 and 10. Later you will write behaviours and an integration method.
 - Make a prefab out of the Eagle ship and remove it from the scene.
 - Make an empty GameObject called eagleSpawner and give it a position of (93, 3, -5) and a Y rotation of -116<sup>o</sup>
 - Add a new EagleSpawner component to the eagleSpawner gameObject. Give it the following fields:
@@ -32,8 +33,11 @@ This is a video of what your project should look like at the end of today's lab 
 ![Eagles](images/eagles.jpg)
 
 - Dynamically assign a Seek behaviour to the leader of the fleet so that it seeks a target 1000 units in front of itself.
-- Dynamically assign an Offset Pursue behaviour to the followers of the leader so that they try and stay in formation with the leader
-- Make the camera look at the leader of the formation
+- Dynamically assign an Offset Pursue behaviour to the followers of the leader so that they try and stay in formation with the leader.
+- You will have to code these behaviours and write an integration function for the Boid class you made earlier. You can use a rigidBody for the integration if you can get it working or use any of the other techniques you learned on the course to implement these behaviours.
+- Make the camera look at the leader of the formation.
+
+To get full marks you should use game components and draw useful gizmos
     
 ## Marking scheme
 
@@ -41,6 +45,6 @@ This is a video of what your project should look like at the end of today's lab 
 |---------|-------|
 | Setting up the scene with the skybox, prefab & spawner | 10 marks |
 | Writing the eagleSpawner | 30 marks |
-| Programming the leader | 20 marks |
-| Programming the follower | 30 marks |
+| Leader behaviour | 20 marks |
+| Follower behaviour | 30 marks |
 | Camera following | 10 marks |
