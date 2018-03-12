@@ -7,7 +7,7 @@ This is a video of what your project should look like at the end of today's lab 
 
 You will have to make a prefab for the Eagle ship and make a spawner component that instiantiates formations of Eagles
 
-- Download this starter Unity project that has a skybox asset and a model of the Eagle transporter ship.
+- Download [this starter Unity project](Space1999.zip) that has a skybox asset and a model of the Eagle transporter ship.
 - Create a new, Unity project on github. Name it Space1999 and push your project to it. You can use whatever git client you are familiar with, but if you are not sure how to do this, cd to the folder you unzipped the project to and type:
 
     ```bash
@@ -19,7 +19,7 @@ You will have to make a prefab for the Eagle ship and make a spawner component t
     git push --set-upstream origin master
     ```
 - Create a new empty scene in your Unity project
-- Set up the skybox and position the camera at (42, 8, -45), with a rotation of 83<sup>o</sup> around the Y axis
+- Set up the skybox and position the camera at (42, 8, -45), with a rotation of 83<sup>o</sup> around the Y axis. (To set the skybox, set the skybox material from Window | Lighting)
 - Drag the Eagle model into the scene. Rotate it so that it points down the Z azis and parent it to an empty gameobject called eaglePrefab.
 - Add a new component called Boid to the eaglePrefab. Give the Boid public fields for mass and maximumSpeed. Give these the values of 1 and 10. Later you will write behaviours and an integration method.
 - Make a prefab out of the Eagle ship and remove it from the scene.
