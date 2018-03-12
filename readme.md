@@ -7,7 +7,7 @@ This is a video of what your project should look like at the end of today's lab 
 
 You will have to make a prefab for the Eagle ship and make a spawner component that instiantiates formations of Eagles
 
-- Download [this starter Unity project](Space1999.zip) that has a skybox asset and a model of the Eagle transporter ship.
+- Download [this starter Unity project](https://github.com/skooter500/GE2-Labtest1-2018/blob/master/Space1999.zip?raw=true) that has a skybox asset and a model of the Eagle transporter ship.
 - Create a new, Unity project on github. Name it Space1999 and push your project to it. You can use whatever git client you are familiar with, but if you are not sure how to do this, cd to the folder you unzipped the project to and type:
 
     ```bash
