@@ -5,12 +5,15 @@ This is a video of what your project should look like at the end of today's lab 
 
 [![YouTube](http://img.youtube.com/vi/bydalDzhCBY/0.jpg)](https://www.youtube.com/watch?v=bydalDzhCBY)
 
+You will have to make a prefab for the Eagle ship and make a spawner component that instiantiates formations of Eagles
+
 - Download this starter Unity project that has a skybox asset and a model of the Eagle transporter ship.
-- Create a new, empty Unity github repository. Make sure the name is Space1999 and push your project to it. You can use whatever git client you are familiar with. If you are unsure how to do this, cd to the folder you unzipped the project to and type:
+- Create a new, Unity project on github. Name it Space1999 and push your project to it. You can use whatever git client you are familiar with, but if you are not sure how to do this, cd to the folder you unzipped the project to and type:
 
     ```bash
     git init
     git remote add origin PASTE_THE_REPO_URL_FROM_YOUR_BROWSER_HERE
+    git pull origin master
     git add .
     git commit -m "Initial version"
     git push --set-upstream origin master
@@ -28,7 +31,7 @@ This is a video of what your project should look like at the end of today's lab 
     public float followers = 2;
     public GameObject prefab;
     ```
-- Write code in the Awake method of the EagleSpawner to spawn a fleet of Eagles in a "V pattern" around the position of the gameObject. The variable ```gap``` is used to set the gap between each of the Eagles on the X and Z axis. ```followers``` is used to set the number of eagles to spawn each side of the leader. For example a value of 2 means 2 followers each side of the leader, meaning 5 Eagles in total. Use the Eagle prefab you made earlier to the prefab gameObject. The diagram below shows how the eagles should be spawned. This script needs to work correctly even if the eagleSpawner is rotated, which it is.
+- Write code in the Awake method of the EagleSpawner to spawn a fleet of Eagles in a "V pattern" around the position of the eagleSpawner game object. The variable ```gap``` is used to set the gap between each of the Eagles on the X and Z axis. ```followers``` is used to set the number of eagles to spawn each side of the leader. For example a value of 2 means 2 followers each side of the leader, meaning 5 Eagles in total. Drag the Eagle prefab you made earlier to the prefab gameObject. The diagram below shows how the eagles should be spawned. This script needs to work correctly even if the eagleSpawner is rotated, which it is.
 
 ![Eagles](images/eagles.jpg)
 
@@ -43,8 +46,8 @@ To get full marks you should use game components and draw useful gizmos
 
 | Feature | Marks |
 |---------|-------|
-| Setting up the scene with the skybox, prefab & spawner | 10 marks |
-| Writing the eagleSpawner | 30 marks |
-| Leader behaviour | 20 marks |
-| Follower behaviour | 30 marks |
+| Setting up the scene with the skybox, camera, prefab & spawner | 10 marks |
+| Writing the EagleSpawner behaviour | 30 marks |
+| Implement the Leader behaviour | 20 marks |
+| Implement the Follower behaviour | 30 marks |
 | Camera following | 10 marks |
