@@ -20,7 +20,7 @@ You will have to make a prefab for the Eagle ship and make a spawner component t
     ```
 - Create a new empty scene in your Unity project
 - Set up the skybox and position the camera at (42, 8, -45), with a rotation of 83<sup>o</sup> around the Y axis. (To set the skybox, set the skybox material from Window | Lighting)
-- Drag the Eagle model into the scene. Rotate it so that it points down the Z azis and parent it to an empty gameobject called eaglePrefab.
+- Drag the Eagle model into the scene. Delete the camera gameObject from the model. It's called Cinema_4D_Editor in the hierarchy. Rotate it so that it points down the Z azis and parent it to an empty gameobject called eaglePrefab.
 - Add a new component called Boid to the eaglePrefab. Give the Boid public fields for mass and maximumSpeed. Give these the values of 1 and 10. Later you will write behaviours and an integration method.
 - Make a prefab out of the Eagle ship and remove it from the scene.
 - Make an empty GameObject called eagleSpawner and give it a position of (93, 3, -5) and a Y rotation of -116<sup>o</sup>
